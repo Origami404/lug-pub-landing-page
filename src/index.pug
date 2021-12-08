@@ -6,24 +6,32 @@ html(lang='zh')
     body(style="font-family: Ubuntu, 'Noto Sans SC', Arial, Helvetica, sans-serif; background-color:white; margin: 0;")
         .body-wrapper
             .content
-                a.logo-wrapper(href='https://www.lug.pub/')
+                a.logo-wrapper(href='http://10.249.80.151/')
                     img.logo(src='assets/images/lug-pub-logo.svg')
                 h1.heading
-                    | Welcome to the pub!
+                    | 这里是 <b>云萝</b> desu!
+
                 h2.section-heading
-                    | 公共访问资源
+                    | 公共访问资源 (正经)
                 .container
-                    +link-button('LUG Wiki 𝛼', 'https://wiki.lug.pub')
-                    +link-button('Verilog OJ', 'https://wiki.lug.pub')
-                    +link-button('LUG GitHub', 'https://github.com/hitszlug')
+                    +link-button('Gitea', 'http://10.249.80.151:3000')
+                    +link-button('Sharelatex', 'http://10.249.80.151:5000')
+                    +link-button('SyzOJ', 'http://10.249.80.151:5283')
+                    +link-button('Pastebin', 'http://10.249.80.151:9958')
                 hr.divider-dotted
+
                 h2.section-heading
-                    | 内网访问资源
+                    | 公共访问资源 (游戏)
                 .container
-                    +link-button('LUG 镜像站', 'http://10.249.12.85/')
-                    +link-button('HITSZ Grader', 'http://10.249.12.98:8000/')
-                    +link-button('HITSZ 上网认证', 'http://10.248.98.2/')
-                    +link-button('云萝', 'http://10.249.80.151/')
+                    +link-button('MC 服务器文档', 'http://10.249.80.151:25566')
+                    +link-button('MC 服务器卫星云图', 'http://10.249.80.151:8123')
+                    +link-button('Screeps Client', 'http://10.249.80.151:60808/(https://screeps.vaala.cloud)/')
+                hr.divider-dotted
+
+                h2.section-heading
+                    | 部署中
+                .container
+                    +link-button('公共网盘(read only)', 'http://10.249.80.151/')
                 footer
                     p.copyright HITSZ Linux User Group © 2021
     //      #background
